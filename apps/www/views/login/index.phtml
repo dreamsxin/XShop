@@ -1,0 +1,14 @@
+<form role="form" action="<?= $this->url->get('login/check') ?>" method="post">
+	<input type="hidden" name="<?= $this->security->getTokenKey() ?>" value="<?= $this->security->getToken() ?>"/>
+	<div class="form-group">
+		<label>账户</label>
+		<input type="email" name="email" class="form-control" placeholder="Enter email">
+	</div>
+	<div class="form-group">
+		<label>密码</label>
+		<input type="password" name="password" class="form-control" placeholder="Password">
+	</div>
+	<button type="submit" class="btn btn-default">登录</button>
+	<a href="<?= $this->url->get('password') ?>" class="btn btn-link">忘记密码？</a>
+	<a href="<?= $this->url->get('register') ?>" class="btn btn-link">注册新用户</a>
+</form>
