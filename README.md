@@ -29,3 +29,12 @@ sudo make install
 sudo vi /etc/php5/apache2/php.ini
 extension=phalcon.so
 ```
+
+安装XShop
+---------
+
+获取源码
+```shell
+git clone https://github.com/dreamsxin/XShop.git
+```
+
