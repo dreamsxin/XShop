@@ -1,10 +1,10 @@
 <?php
 namespace Admin;
 
-class IndexController extends \ControllerBase {
+class IndexController extends ControllerSecurity {
 
 	public function initialize() {
-		\Phalcon\Tag::appendTitle('管理首页');
+		\Phalcon\Tag::appendTitle('首页');
 	}
 
 	public function indexAction() {
