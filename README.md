@@ -3,9 +3,6 @@ XShop
 
 XShop is shop System based on Phalcon Framework
 
-环境配置
-========
-
 安装 Phalcon Framework
 ----------------------
 
