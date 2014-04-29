@@ -1,3 +1,4 @@
+nbproject
 config.local.php
 *~
 .*
@@ -24,3 +25,4 @@ config.local.php
 *.i*86
 *.x86_64
 *.hex
+/nbproject/private/

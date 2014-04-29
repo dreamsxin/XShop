@@ -1,29 +1,31 @@
 <div class="form-box" id="login-box">
-	<div class="header">登录</div>
-	<form action="<?= $this->url->get('login/check') ?>" method="post">
+	<div class="header">注册新用户</div>
+	<form action="<?= $this->url->get('register/check') ?>" method="post">
 		<input type="hidden" name="<?= $this->security->getTokenKey() ?>" value="<?= $this->security->getToken() ?>"/>
 		<div class="body bg-gray">
 			<div class="form-group">
 				<input type="email" name="email" class="form-control" placeholder="Email"/>
 			</div>
 			<div class="form-group">
-				<input type="password" name="password" class="form-control" placeholder="Password"/>
-			</div>          
+				<input type="text" name="phone" class="form-control" placeholder="电话"/>
+			</div>
 			<div class="form-group">
-				<input type="checkbox" name="remember_me"/> 记住
+				<input type="password" name="password" class="form-control" placeholder="密码"/>
+			</div>
+			<div class="form-group">
+				<input type="password" name="password2" class="form-control" placeholder="确认密码"/>
 			</div>
 		</div>
-		<div class="footer">                                                          
-			<button type="submit" class="btn bg-olive btn-block">登录</button>  
+		<div class="footer">                    
 
-			<p><a href="<?= $this->url->get('password') ?>">忘记密码</a></p>
+			<button type="submit" class="btn bg-olive btn-block">注册</button>
 
-			<a href="<?= $this->url->get('register') ?>" class="text-center">注册新用户</a>
+			<a href="/login/index" class="text-center">我已经注册用户</a>
 		</div>
 	</form>
 
 	<div class="margin text-center">
-		<span>使用第三方账户登录</span>
+		<span>Register using social networks</span>
 		<br/>
 		<button class="btn bg-light-blue btn-circle"><i class="fa fa-facebook"></i></button>
 		<button class="btn bg-aqua btn-circle"><i class="fa fa-twitter"></i></button>
